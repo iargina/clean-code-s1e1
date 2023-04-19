@@ -47,9 +47,12 @@ li {
   list-style: none;
 }
 
-input,button{
-  outline:none;
+input,
+button {
+  outline: none;
 }
+
+
 
 .button  {
   background: none;
@@ -64,8 +67,7 @@ input,button{
   color: #3a3a3a;
 }
 /* Heading */
-.list__title,
-.label__task__new {
+.list__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -74,6 +76,7 @@ input,button{
   margin: 0;
   text-transform: uppercase;
 }
+
 .input__task {
   margin: 0;
   font-size: 18px;
@@ -86,6 +89,7 @@ input,button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .input__task:focus {
   color: #333;
 }
@@ -95,6 +99,8 @@ input,button{
   display: block;
   margin: 0 0 20px;
 }
+
+
 #new-task {
   width: 318px;
 }
