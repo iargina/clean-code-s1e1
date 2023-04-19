@@ -18,7 +18,8 @@ body {
 }
 
 @media (max-width:768px) {
-.wrapper__image { text-align: center;
+  .wrapper__image { 
+    text-align: center;
 }
 }
 .wrapper__main {
@@ -35,11 +36,11 @@ body {
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li {
-  list-style:none;
+  list-style: none;
 }
 input,button{
   outline:none;
@@ -132,14 +133,14 @@ input,button{
 
 /* Edit Task */
 .input__task__todo, .input__task__completed  {
-  display:none
+  display: none
 }
 
 .item__todo_edit .input__task__todo {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .item__todo_edit .label__task {
-  display:none;
+  display: none;
 }
