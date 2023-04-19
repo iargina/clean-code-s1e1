@@ -29,7 +29,8 @@ body {
   margin: 0 auto 0;
 }
 
-.input__task {
+.input__task, 
+.label__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -67,7 +68,8 @@ button {
   color: #3a3a3a;
 }
 /* Heading */
-.list__title {
+.list__title, 
+.label__task__new  {
   color: #333;
   font-weight: 700;
   font-size: 15px;
