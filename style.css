@@ -22,11 +22,13 @@ body {
     text-align: center;
 }
 }
+
 .wrapper__main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .input__task {
   width: 56%;
   display: inline-block;
@@ -35,16 +37,20 @@ body {
 .wrapper__new-task {
   display: flex;
 }
+
 ul {
   margin: 0;
   padding: 0px;
 }
+
 li {
   list-style: none;
 }
+
 input,button{
   outline:none;
 }
+
 .button  {
   background: none;
   border: 0px;
@@ -107,20 +113,24 @@ input,button{
 .input__checkbox {
   margin: 0 10px;
 }
+
 .label__task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .input__task {
   width: 226px;
 }
-.img__delete{
+
+.img__delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .img__delete:hover {
   transform: rotateZ(0);
 }
@@ -132,7 +142,8 @@ input,button{
 }
 
 /* Edit Task */
-.input__task__todo, .input__task__completed  {
+.input__task__todo, 
+.input__task__completed  {
   display: none
 }
 
