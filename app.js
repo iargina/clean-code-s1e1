@@ -32,13 +32,16 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+
+    listItem.className='list__item item__todo'
     label.innerText=taskString;
     label.className='label__task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="input__task";
+    editInput.value=taskString;
+    editInput.className="input__task_todo";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="button button__edit";
@@ -59,7 +62,8 @@ var createNewTaskElement=function(taskString){
 
 
 
-var addTask=function(){
+var addTask=function(ev){
+    ev.preventDefault()
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
@@ -86,10 +90,10 @@ var editTask=function(){
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".button__edit");
     var containsClass=listItem.classList.contains("item__todo_edit");
-    //If class of the parent is .editmode
+    //If class of the parent is .item__todo_edit
     if(containsClass){
 
-        //switch to .editmode
+        //switch to .item__todo_edit
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
